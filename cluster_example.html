@@ -25,9 +25,9 @@
     <script>  
     // this means that the following lines will be script 
     // (it could also or point to an external script file). 
-    var map = L.map('mapid').setView([35.91, -79.05], 4); // YOU CAN CHANGE THE ZOOM
+    // var map = L.map('mapid').setView([35.91, -79.05], 4); // YOU CAN CHANGE THE ZOOM
 
-    // var map = L.map('mapid',{maxZoom:20, minZoom:1}).setView([35.91, -79.05], 4); // You need to set a zoom if you want the cluster method to work 
+    var map = L.map('mapid',{maxZoom:20, minZoom:1}).setView([35.91, -79.05], 4); // You need to set a zoom if you want the cluster method to work 
 
     // this line is creating the variable map by  initializing the L.map class (a Leaflet class) with the mapid element that we created before. setView is a method that can be applied to the class L.map : you can give it a latitude, longitude and a zoom.  The higher the value of the zoom, the finer the initial scale of the map. 
     //*************************************************************
@@ -49,8 +49,6 @@
         .bindPopup('Hey I am at Carolina Hall 322') // YOU CAN CHANGE THE MESSAGE
         .openPopup();
     
-    // var hm = L.marker([pts.features[0].properties.LAT,pts.features[0].properties.LON]).addTo(map)
-
     // create custom icon variable
 
     // <!-- ************** I CHANGED THE ICON to an icon from  https://www.flaticon.com/free-icons/hurricane ***************** -->
