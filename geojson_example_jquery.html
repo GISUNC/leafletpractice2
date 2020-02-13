@@ -11,7 +11,7 @@
         <script src="geojson/michaelpts.geojson" ></script>
     </head>
     <body> 
-    <h1>Example Using jquery and node</h1> 
+    <h1>Example Using jquery</h1> 
     <div>
 
     <div id="mapid"></div>
@@ -64,26 +64,7 @@
         }  ).addTo(map);
     });
 
-    // var hurricane = L.geoJSON(pts, { // open the geoJSON and place a marker 
-    //     pointToLayer: function (feature, latlng) { 
-    //     return L.marker(latlng, {icon: uncIcon});}
-    //     })//.addTo(map);
-
-        // var clusters = L.markerClusterGroup();
-        // clusters.addLayer(hurricane);
-        // map.addLayer(clusters); 
     
-        var baseMaps = {
-    "OSM": OSM,
-    "ESRI Imagery": Esri_WorldImagery,
-    "Topography": Esri_WorldShadedRelief
-    };
-
-    // var overlayMaps = {
-    //     "Carolina Hall": layer,
-    //     "Hurricane":hurricane
-    // };
-
     // L.control.layers(baseMaps, overlayMaps).addTo(map);
     OSM.addTo(map);
 
